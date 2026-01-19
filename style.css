@@ -1224,9 +1224,32 @@ img {
     .imagemDireita,
     .imagemEsquerda,
     .imageminferior {
-      display: none;
-      visibility: hidden;
-      pointer-events: none;
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+      position: static !important;
+      transform: none !important;
+    }
+    #beneficios img {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+      pointer-events: none !important;
+    }
+    .beneficio-card {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+    #beneficios {
+      height: auto !important;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .titulo2 {
+      margin-top: 0;
+      padding-top: 32px; 
     }
   
     /* ---------- BOTÕES ---------- */
@@ -1262,8 +1285,9 @@ img {
     .imagemsobreposta2 .esquerda,
     .imagemsobreposta2 .direita {
       display: none;
+      
     }
-  
+    
     .titulo2 h1,
     .titulo2 h2 {
       font-size: 1.5rem;
@@ -1389,24 +1413,17 @@ img {
   gap: 1.5rem;
   padding: 2rem 1rem;
 }
-
-.oitavo .texto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.texto h1 {
+  font-size: 22px;
   text-align: center;
 }
 
-.oitavo .texto h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+.texto p {
+  font-size: 15px;
+  text-align: center;
+  margin-left: 0;
 }
 
-.oitavo .texto p {
-  font-size: 1.1rem;
-  line-height: 1.4;
-  margin-left: 0; /* remove aquele deslocamento lateral */
-}
 /* ====== SEÇÃO NONA - MOBILE ====== */
 .nona {
   flex-direction: column;
@@ -1534,10 +1551,10 @@ img {
 }
 
 .seta.direita {
-  right:
+  right:-10px;
 
+}
 
-.
 
 
 
