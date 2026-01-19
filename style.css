@@ -971,208 +971,6 @@ html,body {
   display: flex;
 }
 
-/* Responsive: ativa a navbar mobile abaixo de 768px */
-@media (max-width: 768px) {
-  .Meio, .fim {
-    display: none;
-  }
-
-  .menu-mobile-icon {
-    display: block;
-  }
-
-  .logo {
-    margin: 0 auto;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  .cardNav {
-
-    align-items: center;
-    text-align: center;
-    height: 75px;
-    gap: 1rem;
-  }
-
-  .logo img {
-    width: 150px;
-  }
-
-  .Meio a, .fim a {
-    font-size: 1rem;
-  }
-
-  .primeiro {
-    margin-top: 18rem;
-    align-items: center;
-  }
-
-  .imagemDireita, .imagemEsquerda {
-    display: none;
-  }
-
-  .imagemsobreposta {
-    padding: 0 1rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-  }
-
-
-  .titulo h1.tituloPrincipal {
-    font-size: 1.5rem;
-  }
-
-  .titulo h2 {
-    font-size: 1.5rem;
-  }
-  .testegratis h1{
-    font-size: 1.4rem;
-  }
-
-  .testegratis {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .celular-img {
-    width: 90%;
-    max-width: 360px;
-  }
-
-  .imageminferior img {
-    width: 100%;
-    height: auto;
-    display: none;
-  }
-  .imagemsobreposta2 .direita, .esquerda{
-    display: none;
-  }
-  .titulo2 h1 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .titulo2 h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .imagemsobreposta2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .imagemsobreposta2 img {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .terceiro .titulo3 h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .carrossel1 .giro {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 15px;
-    padding: 2rem;
-  }
-
-  .carrossel1 img {
-    scroll-snap-align: start;
-    width: 250px;
-    height: auto;
-    flex-shrink: 0;
-    gap: 15px;
-  }
-
-  .carrossel {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .carrossel-container {
-    width: 100%;
-    overflow-x: auto;
-    display: flex;
-    scroll-snap-type: x mandatory;
-    gap: 15px;
-  }
-
-  .carrossel-item {
-    min-width: 80%;
-    margin: 0 rem;
-    scroll-snap-align: center;
-    text-align: center;
-    gap: 15px;
-  }
-
-  .quinta {
-    flex-direction: column;
-    padding: 1rem;
-    gap: 2rem;
-  }
-
-  .Tesquerdo h1, .Tdireito h1, .Tdireito h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  .cardBox {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .cardBox img {
-    width: 90%;
-    height: auto;
-  }
-
-  .card-especificacoes ul {
-    padding-left: 1rem;
-  }
-
-  .faq-pergunta {
-    font-size: 1.1rem;
-    padding: 1rem;
-  }
-
-  .faq-resposta {
-    font-size: 1rem;
-    padding: 0 1rem 1rem 1rem;
-  }
-
-  .oitavo {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    gap: 1rem;
-  }
-
-  .mapa img {
-    width: 100%;
-    height: auto;
-  }
-
-  .nona {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem 1rem;
-  }
-
-  .icones {
-    justify-content: center;
-    gap: 1.5rem;
-  }
-}
 
 /*formulario*/
 form {
@@ -1371,135 +1169,218 @@ img {
 }
 
 /* =========================================
-   MOBILE — TELAS ATÉ 768px
+   MOBILE — até 768px (ÚNICO BREAKPOINT)
    ========================================= */
    @media (max-width: 768px) {
-
-    /* RESET BÁSICO */
-    .container,
-    section,
-    div {
-      max-width: 100%;
-      overflow-x: hidden;
+    body {
+      padding-top: 120px;
     }
-  
-    /* TÍTULOS */
-    h1.titulo,
-    .linha-destaque .linha-direita .frase-recolhida {
-      font-size: 26px !important;
+    /* ---------- NAVBAR ---------- */
+    .cardNav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      border-radius: 0;
+      padding: 10px;
+      height: 75px;
+      gap: 1rem;
       text-align: center;
-      margin: 0 auto;
     }
   
-    h2,
-    h3 {
-      text-align: center;
-      font-size: 20px;
+    .Meio,
+    .fim {
+      display: none;
     }
   
-    /* PARÁGRAFOS */
-    p, .conteudo p {
-      font-size: 16px;
-      line-height: 1.4;
-      padding: 0 10px;
-    }
-  
-    /* IMAGENS */
-    img {
-      max-width: 100%;
-      height: auto;
+    .menu-mobile-icon {
       display: block;
     }
   
-    /* HERO / PRIMEIRA SEÇÃO */
-    .primeira-secao {
+    .logo img {
+      width: 150px;
+    }
+  
+    /* ---------- HERO ---------- */
+    .titulo {
+      position: relative;
+      margin-top: 100px;
+    }
+  
+    .tituloPrincipal,
+    .titulo h2 {
+      font-size: 1.6rem;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .imagemsobreposta {
+      margin-top: 120px;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  
+    .img1,
+    .img2,
+    .imagemDireita,
+    .imagemEsquerda,
+    .imageminferior {
+      display: none;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  
+    /* ---------- BOTÕES ---------- */
+    .bt,
+    .bt2 {
+      width: 90%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  
+    /* ---------- CELULAR ---------- */
+    .celular {
+      height: auto;
+      margin: 2rem 0;
+    }
+  
+    .celular-img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      opacity: 1;
+    }
+  
+    /* ---------- SEGUNDA SEÇÃO ---------- */
+    .imagemsobreposta2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    .imagemsobreposta2 .esquerda,
+    .imagemsobreposta2 .direita {
+      display: none;
+    }
+  
+    .titulo2 h1,
+    .titulo2 h2 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 0; 
+      margin-top: 8px;    
+    }
+  
+    /* ---------- CARROSSEIS ---------- */
+    .carrossel,
+    .carrossel-container {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 15px;
+    }
+  
+    .carrossel-item {
+      min-width: 80%;
+      scroll-snap-align: center;
+    }
+  
+    /* ---------- SEÇÕES GRANDES ---------- */
+    .quinta,
+    .sexta,
+    .setima,
+    .oitavo,
+    .nona {
       flex-direction: column;
       height: auto;
-      padding: 40px 15px;
+      gap: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
   
-    .primeira-secao .texto-slogan h1 {
-      font-size: 28px;
+    /* ---------- TEXTOS ---------- */
+    h1 {
+      font-size: 1.6rem;
     }
   
-    .primeira-secao .imagem-celular {
-      width: 80%;
-      margin: 20px auto 0;
-      position: static !important;
+    h2 {
+      font-size: 1.4rem;
     }
   
-    /* CONTEÚDO EM LINHAS (IMAGEM + TEXTO) */
-    .conteudo {
-      flex-direction: column !important;
-      gap: 20px;
+    p {
+      font-size: 1rem;
+    }
+    .titulo3{
+      font-size: 1.8rem;
       text-align: center;
-      padding: 20px 10px;
     }
   
-    .conteudo .texto,
-    .conteudo img {
-      width: 100% !important;
+    .carrossel1::-webkit-scrollbar,
+    .giro::-webkit-scrollbar {
+    display: none; /* Chrome, Edge, Safari */
+    }
+    .carrossel-container {
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    
+    .carrossel-container::-webkit-scrollbar {
+      display: none;
+    }
+    .quarto {
+      display: block;
+      padding: 32px 16px;
     }
   
-    /* BOTÕES */
-    .btn,
-    button,
-    a.button {
-      width: 90%;
-      max-width: 300px;
-      margin: 0 auto;
-      padding: 12px 20px;
-      font-size: 16px;
-    }
-  
-    /* SEÇÃO DE CARROSSEL / CARDS */
-    .carrossel {
+    .quarto h1 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 12px;
       width: 100%;
-      overflow: hidden;
-      padding: 10px;
+      text-align: center;
     }
   
-    .card {
-      width: 90% !important;
-      margin: 0 auto 20px;
+    .quarto h2 {
+      font-size: 1rem;
+      line-height: 1.4;
+      width: 100%;
+      text-align: center;
     }
-  
-    /* SEÇÃO DE CONTADOR */
-    .contadores {
+    
+    /* ---------- CARDS ---------- */
+    .cardBox {
       flex-direction: column;
-      gap: 25px;
-      padding: 30px 10px;
+      align-items: center;
     }
+    
   
-    .contador-item {
+    .Boxnome,
+    .card-especificacoes {
       width: 100%;
-      text-align: center;
+      max-width: 350px;
     }
   
-    /* FOOTER */
-    footer {
-      padding: 40px 10px;
-      text-align: center;
+    /* ---------- FAQ ---------- */
+    .faq {
+      padding: 15px;
     }
   
-    footer .coluna {
-      width: 100%;
-      padding: 10px 0;
+    /* ---------- FORM ---------- */
+    form {
+      width: 95%;
+      margin: 0 auto;
     }
   
-    /* EVITAR ANIMAÇÕES MUITO PESADAS NO MOBILE */
-    * {
-      animation-duration: 0.6s !important;
-      animation-delay: 0s !important;
+    /* ---------- BLOG ---------- */
+    .blog-posts {
+      grid-template-columns: 1fr;
     }
   
-    /* CORREÇÃO DE POSICIONAMENTO ABSOLUTO */
-    .fixo-mobile,
-    .absoluto {
-      position: static !important;
-      transform: none !important;
-      margin: 0 auto !important;
+    /* ---------- IMAGENS ---------- */
+    img {
+      max-width: 100%;
+      height: auto;
     }
+  
   }
   
