@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>GreenBox</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="cardNav">
+            <div class="Poslogo">
+              <div class="logo">
+                <img src="imagens/logo2.png" width="95px" alt="" />
+              </div>
+
+              <div class="menu-mobile-icon" onclick="toggleMenu()">
+               <i class="fas fa-bars"></i>
+              </div>
+
+            </div>
+            <div class="Meio">
+              <a href="#produtos">Nossos Produtos</a>
+              <a href="" target="_blank">
+                Vantagens
+              </a>              
+              <a href="#saibaMais">Saiba Mais</a>
+              <a href="#Blog">Blog</a>
+            </div>
+            <div class="fim animar-botao">
+              <a href="" target="_blank">Contato ➜</a>
+            </div>
+          </div>
+          <div class="menu-mobile" id="menuMobile">
+            <a href="#produtos">Nossos Produtos</a>
+            <a href="" target="_blank">
+              Vantagens
+            </a>   
+            <a href="#saibaMais">Saiba Mais</a>
+            <a href="https://wa.me/5511989369290" target="_blank">Contato ➜</a>
+          </div>
+        </nav>
+      </header>
+      <div class="primeiro">
+        <div class="imagemDireita">
+          <img src="imagens/supedireita.png" alt="" />
+        </div>
+        <div class="imagemEsquerda">
+          <img src="imagens/supesquerdo.jpg"
+          width="240px"
+          alt=""
+          />
+        </div>
+        </div>
+        <div class="imagemsobreposta">
+          <img class="img1" src="imagens/sobreposto1.png" alt="" />
+          <img class="img2" src="imagens/sobreposto2.png" alt="" />
+          <div class="titulo">
+            <h1 class="tituloPrincipal">
+              VOCÊ NUNCA ESTEVE <br />TÃO PERTO <br />
+              DE REVOLUCIONAR
+            </h1>
+            <h2>
+              A GESTÃO DE ENCOMENDAS <br />
+              DO SEU CONDOMÍNIO.
+            </h2>
+            <div class="testegratis">
+              <div class="bt animar-botao">
+                <a href="" target="_blank">Teste Grátis</a>
+              </div>
+              <div class="setaBaixo">↓</div>
+            </div>
+          </div>
+        </div>
+        <div class="celular">
+          <img
+            src="imagens/celularCB.png"
+            alt=""
+            class="celular-img"
+            width="360px"
+          />
+        </div>
+        <div class="trigger-celular"></div>
+      </div>
+      <div class="imageminferior">
+        <img src="imagens/infeEsquerdo.jpg" alt="" />
+      </div>
+      <br>
+      <br>
+      <div class="titulo2">
+        <h1>O FAVORITO DOS SÍNDICOS:<br />A SOLUÇÃO INTELIGENTE</h1>
+        <h2>PARA A GESTÃO DE ENCOMENDAS</h2>
+      </div>
+      <div class="segundo">
+    
+  <section id="beneficios" style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+
+  <!-- Imagem esquerda -->
+  <img src="imagens/esquerda.jpg" alt="Mulher locker" style="position: absolute; top: 40px; left: 80px; width: 400px; transform: rotate(-8deg); border-radius: 10px;">
+
+  <!-- Card 90 -->
+  <div class="beneficio-card" style="background: #ffffff; transform: rotate(-14deg); position: absolute; top: 300px; left: 105px; width: 150px; height: 90px;">
+    <div class="number" data-target="90">0%</div>
+    <p>Diminuição de reclamações.</p>
+  </div>
+
+  <!-- Card 70 -->
+  <div class="beneficio-card" style="background: #b6ffc9; transform: rotate(8deg); position: absolute; top: 80px; left: 320px; width: 150px; height: 85px;">
+    <div class="number" data-target="70">0%</div>
+    <p>Mais tempo livre para a gestão.</p>
+  </div>
+
+  <!-- Imagem meio -->
+  <img src="imagens/meio.jpg" alt="Homem locker" style="position: absolute; top: 150px; left: 500px; width: 450px; transform: rotate(-1deg); border-radius: 10px;">
+
+  <!-- Card 100 -->
+  <div class="beneficio-card" style="background: #b6ffc9; transform: rotate(-8deg); position: absolute; top: 450px; left: 490px;">
+    <div class="number" data-target="100">0%</div>
+    <p>Mais segurança na entrega.</p>
+  </div>
+
+  <!-- Card 95 -->
+  <div class="beneficio-card" style="background: #ffffff; transform: rotate(12deg); position: absolute; top: 140px; left: 800px;">
+    <div class="number" data-target="95">0%</div>
+    <p>Maior conforto para o seu dia.</p>
+  </div>
+
+  <!-- Imagem direita -->
+  <img src="imagens/direita.jpg" alt="Entregador locker" style="position: absolute; top: 50px; left: 1050px; width: 450px; transform: rotate(-8deg); border-radius: 10px;">
+
+  <!-- Card 50 -->
+  <div class="beneficio-card" style="background: #ffffff; transform: rotate(1deg); position: absolute; top: 45px; left: 1330px; width: 150px; height: 90px;">
+    <div class="number" data-target="50">0%</div>
+    <p>Diminuição do uso do papel.</p>
+  </div>
+
+  <!-- Card 55 -->
+  <div class="beneficio-card" style="background: #b6ffc9; transform: rotate(1deg); position: absolute; top: 290px; left: 1070px; width: 150px; height: 100px;">
+    <div class="number" data-target="55">0%</div>
+    <p>Redução de custo operacional.</p>
+  </div>
+
+</section>
+      </div>
+      <div class="terceiro">
+        <h2 class="titulo3">
+          MAIS DE
+          <span class="numeroContainer">
+            <div class="fundoVerde"></div>
+            <span id="contador">0</span>
+          </span>
+          CLIENTES FIÉIS<br />ESPALHADOS PELO BRASIL
+        </h2>
+
+        <p class="t">
+          É assim que garantimos segurança e praticidade para milhares de
+          moradores todos os dias.
+        </p>
+
+        <div class="carrossel1">
+          <div class="giro">
+            <img src="imagens/relato1.png" alt="" />
+            <img src="imagens/relato2.png" alt="" />
+            <img src="imagens/relato3.png" alt="" />
+            <img src="imagens/relato4.png" alt="" />
+            <img src="imagens/relato1.png" alt="" />
+            <img src="imagens/relato2.png" alt="" />
+            <img src="imagens/relato3.png" alt="" />
+            <img src="imagens/relato4.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="quarto">
+        <h1>
+          USAR A <span class="detalhe">GREENBOX</span> É MAIS FÁCIL DO QUE VOCÊ
+          IMAGINA
+        </h1>
+        <h2>ASSISTA AOS VÍDEOS E VEJA COMO PODEMOS TE AJUDAR</h2>
+
+        <div class="projetos">
+          <div class="carrossel">
+            <button class="navegar-esquerda">&#8249;</button>
+            <div class="carrossel-container">
+              <div class="carrossel-item">
+                <h3>ENTREGAS</h3>
+                <img src="imagens/entregaV.png" alt="Imagem do Projeto 1" />
+              </div>
+              <div class="carrossel-item destaque">
+                <h3>
+                  COMO RETIRAR <br />
+                  ENCOMENDA
+                </h3>
+                <a href="https://www.youtube.com/shorts/t9JBqI45918" target="_blank">
+                  <img src="imagens/receberV.png" alt="Imagem do Projeto 2" />
+                </a> 
+              </div>
+              <div class="carrossel-item">
+                <h3>
+                  MUDANDO DE TELEFONE <br />
+                  NO GREENBOX
+                </h3>
+                <a href="#" target="_blank">
+                  <img src="imagens/video1.png" alt="Imagem do Projeto 2" />
+                </a> 
+              </div>
+              <div class="carrossel-item">
+                <h3>ENTREGA NO ARMÁRIO</h3>
+                <a href="https://www.youtube.com/watch?v=rF-NyOa8U3U" target="_blank">
+                  <img src="imagens/video1.png" alt="Imagem do Projeto 2" />
+                </a>   
+              </div>
+              <div class="carrossel-item">
+                <h3>COMO USAR</h3>
+                <a href="#" target="_blank">
+                  <img src="imagens/video1.png" alt="Imagem do Projeto 2" />
+                </a> 
+              </div>
+            </div>
+            <button class="navegar-direita">&#8250;</button>
+          </div>
+        </div>
+      </div>
+      <div class="quinta">
+        <div class="Tdireito">
+          <h2>GreenBox:</h2>
+          <h1>
+            O smart locker<br />
+            que entrega mais <br />
+            do que os outros<br />
+            prometem
+          </h1>
+        </div>
+        <div class="Tesquerdo">
+          <h1>
+            Clique e descubra os diferencias<br />
+            que tornam a GreenBox única no <br/>mercado
+          </h1>
+          <div class="bt2 animar-botao">
+            <a href="">Spoiler: Nenhum concorrente tem isso</a>
+          </div>
+        </div>
+      </div>
+      <section id="produtos">
+      <div class="sexta">
+        <div class="cardBox">
+          <div class="Boxnome">
+            <h1 id="titulo-modelo"><strong>MODELO:</strong> GreenBox com expansão</h1>
+            <button class="seta esquerda">&#8249;</button>
+            <img src="imagens/BoxlockerFoto.png" alt="" id="imagem-produto"/>
+            <button class="seta direita">&#8250;</button>
+          </div>
+          <div class="card-especificacoes">
+            <h1>DESCRIÇÃO</h1>
+            <ul id="lista-especificacoes">
+              <li><strong>ALTURA TOTAL</strong>: 1980cm</li>
+              <li><strong>BOX MAIOR</strong>: 0,80m</li>
+              <li><strong>BOX MEDIO</strong>: 0,60m</li>
+              <li><strong>BOX MENOR</strong>: 45kg</li>
+              <li><strong>LARGURA DO BOX</strong>: Aço inox</li>
+              <li><strong>LARGURA</strong>: Aço inox</li>
+              <li><strong>PROFUNDIDADE</strong>: Aço inox</li>
+              <li><strong>PAINEL</strong>: Aço inox</li>
+              <li><strong>ACESSÓRIO OPCIONAL: </strong>: Aço inox</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="saibaMais">
+      <div class="setima">
+    <div class="Tsetima">
+      <h1><strong> PERGUNTAS FREQUÊNTES </strong></h1>
+    </div>
+        <div class="faq">
+          <div class="faq-pergunta">
+            Como o GreenBox funciona ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            O GreenBox é um armário inteligente que simplifica o recebimento de encomendas no condomínio.
+             Quando uma entrega chega, o entregador ou porteiro seleciona o apartamento na tela, 
+             deposita a encomenda em um compartimento e o morador recebe uma notificação no WhatsApp com foto da entrega. 
+             Para retirar, o morador usa uma senha ou token.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            Como é feita a instalação do GreenBox ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            Nossa equipe técnica realiza a instalação completa,
+            incluindo configuração do sistema e treinamento para porteiros e síndicos.
+            Tudo é feito de forma rápida e sem complicações.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            Preciso instalar algum aplicativo ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            Não! O GreenBox envia notificações diretamente pelo WhatsApp, 
+            sem necessidade de baixar aplicativos ou criar cadastros.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            O GreenBox funciona sem internet ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            Sim! O GreenBox possui um servidor próprio que mantém o sistema funcionando mesmo sem internet.
+             Quando a conexão voltar, todas as notificações são enviadas automaticamente.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            Como é a segurança do GreenBox ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            O sistema registra todas as movimentações com fotos, garantindo total transparência.
+            Além disso, apenas moradores autorizados podem retirar encomendas, usando senhas ou tokens.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            O GreenBox é de fácil uso para idosos ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            Sim! Além da senha, oferecemos a opção de tokens físicos, que são práticos e acessíveis para idosos. 
+            O sistema também possui áudio que orienta cada passo.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            Há fidelidade no contrato ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            Não! Não exigimos contratos longos ou fidelização. Se o condomínio não quiser mais usar o sistema, 
+            basta avisar, e nós removemos o equipamento sem custos adicionais.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            E se o entregador não souber usar o GreenBox ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            O sistema é super intuitivo, e o entregador recebe orientações em áudio e na tela durante o uso. 
+            Além disso, os porteiros podem auxiliar no processo.
+          </div>
+        </div>
+      
+        <div class="faq">
+          <div class="faq-pergunta">
+            O que acontece caso o GreenBox fique cheio ?
+            <span class="icon">+</span>
+          </div>
+          <div class="faq-resposta">
+            O sistema avisa o porteiro quando a capacidade está próxima do limite,
+            permitindo que ele reorganize as encomendas ou notifique os moradores para retirada.
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <div class="oitavo">
+        <div class="texto">
+          <h1>VENHA NOS CONHECER</h1>
+          <p>
+            Estamos localizados na:<br>
+            Rua Oswaldo Cruz<br>
+            N° XXXX<br>
+            Vila Mariana - SP<br>
+            Cep XXXXX-XXX
+          </p>
+        </div>
+        <div class="mapa animar-botao">
+          <a href="https://www.google.com/maps/place/Rua+Vergueiro,+1353+-+Vila+Mariana,+S%C3%A3o+Paulo+-+SP,+04101-000" target="_blank">
+            <img src="imagens/mapa.png" alt="Mapa no celular">
+          </a>
+        </div>
+      </div>
+      <div class="nona">
+        <div class="NonoT">
+          <h1>GreenBox</h1>
+          <p><strong>Praticidade,<br> segurança e<br> modernidade <br><br> para seu <br> condomínio</p>
+        </div>
+        <div class="redes">
+          <p>Estamos também nas redes <br> sociais! Clique em um dos ícones <br> abaixo e venha conosco conhecer ainda <br> mais </strong></p>
+          <div class="icones">
+            <a href="https://facebook.com/BoxLocker" target="_blank">
+              <i class="fab fa-facebook-f animar-botao"></i>
+            </a>
+            <a href="https://instagram.com/boxlockerbrasil" target="_blank">
+              <i class="fab fa-instagram animar-botao"></i>
+            </a>
+            <a href="https://wa.me/5511989369290" target="_blank">
+              <i class="fa-solid fa-message animar-botao"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="content-placeholder"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
