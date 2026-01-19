@@ -1384,20 +1384,28 @@ img {
 /* ====== SEÇÃO OITAVO - MOBILE ====== */
 .oitavo {
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
   padding: 2rem 1rem;
+}
+
+.oitavo .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
-.texto h1 {
-  font-size: 2rem;
+.oitavo .texto h1 {
+  font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
-.texto p {
-  font-size: 1rem;
-  margin-left: 0;
+.oitavo .texto p {
+  font-size: 1.1rem;
   line-height: 1.4;
+  margin-left: 0; /* remove aquele deslocamento lateral */
 }
 /* ====== SEÇÃO NONA - MOBILE ====== */
 .nona {
